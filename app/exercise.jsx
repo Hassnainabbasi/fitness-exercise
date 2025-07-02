@@ -1,14 +1,12 @@
 import { Ionicons } from "@expo/vector-icons";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { useEffect, useMemo, useState } from "react";
-import { Image, ScrollView, StatusBar, TouchableOpacity } from "react-native";
+import { Image, ScrollView, StatusBar, Text, TouchableOpacity, View } from "react-native";
 import {
-  heightPercentageToDP as hp,
-  widthPercentageToDP as wp,
+    heightPercentageToDP as hp,
+    widthPercentageToDP as wp,
 } from "react-native-responsive-screen";
 import { fetchBodyParts } from "../api/exerciseDb";
-import { View } from "react-native";
-import { Text } from "react-native";
 import { Exercises } from "../components/Exercises";
 
 export default function exercise() {
